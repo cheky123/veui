@@ -16,7 +16,8 @@ module.exports = {
         ...(VEUI_PREFIX
           ? {
             modifyVars: {
-              'veui-prefix': VEUI_PREFIX
+              'veui-prefix': VEUI_PREFIX,
+              'dls-color-brand': '#000'
             }
           }
           : {})
