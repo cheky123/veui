@@ -13,14 +13,14 @@ module.exports = {
     loaderOptions: {
       less: {
         javascriptEnabled: true,
-        ...(VEUI_PREFIX
-          ? {
-            modifyVars: {
-              'veui-prefix': VEUI_PREFIX,
-              'dls-color-brand': '#000'
+        modifyVars: {
+          'dls-color-brand': '#000',
+          ...(VEUI_PREFIX
+            ? {
+              'veui-prefix': VEUI_PREFIX
             }
-          }
-          : {})
+            : {})
+        }
       }
     }
   },
